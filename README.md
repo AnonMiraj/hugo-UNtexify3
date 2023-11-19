@@ -1,5 +1,6 @@
 # UnTeXify3
 it is just a striped down version of the original repo without latex basically and every feature i don't personally need 
+for now i intend on making the site compatible with Arabic 
 ------
 > A LaTeX-style hugo theme with the gruvbox color scheme for personal blogging
 
