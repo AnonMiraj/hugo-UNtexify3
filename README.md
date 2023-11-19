@@ -1,5 +1,6 @@
-# TeXify3
-
+# UnTeXify3
+it is just a striped down version of the original repo without latex basically and every feature i don't personally need 
+------
 > A LaTeX-style hugo theme with the gruvbox color scheme for personal blogging
 
 [![Hugo](https://img.shields.io/badge/hugo-0.115.1-blue.svg)](https://gohugo.io)
