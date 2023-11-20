@@ -74,21 +74,5 @@
     padding-top: 1rem;
  }
 
-  #back-to-top {
-      bottom: 20px;
-      right: 20px;
-      font-size: 16px;
-      border: none;
-      outline: none;
-      background-color: var(--bg_s);
-      color: var(--fg);
-      cursor: pointer;
-      padding: 1rem;
-      border-radius: $radius;
-      margin: calc($margin * 2) $padding $margin $padding;
-  }
 
-  #back-to-top:hover {
-      background-color: var(--bg_h);
-  }
 }

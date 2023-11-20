@@ -1,21 +1,9 @@
 @use "sass:math";
 
 @import "../vars";
-@import "../syntax";
+// @import "../syntax";
 
 .content {
-  .MathJax {
-    font-size: 100% !important;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-
-  .katex {
-    font-size: 100% !important;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-
   :last-child {
     margin-bottom: 0;
   }

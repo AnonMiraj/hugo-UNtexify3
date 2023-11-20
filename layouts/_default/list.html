@@ -10,12 +10,17 @@
   {{ $pages := where .Data.Pages "Type" "posts" }}
   {{ range $pages.GroupByDate "2006-01" }}
   <div class="post-group">
-    <h3>{{ dateFormat "January 2006" (printf "%s-01" .Key) }}</h3>
     <ul>
       {{ range .Pages }}
       <li>
         <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <time>{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
+        {{ $date := .Date }}
+        {{ $day := $date.Format "2" }}
+        {{ $month := index (slice "يناير" "فبراير" "مارس" "إبريل" "مايو" "يونيو" "يوليو" "أغسطس" "سبتمبر" "أكتوبر" "نوفمبر" "ديسمبر") (sub $date.Month 1) }}
+        {{ $year := $date.Format "2006" }}
+        <p>{{ $day }} {{ $month }} {{ $year }}</p>
+
+
       </li>
       {{ end }}
     </ul>

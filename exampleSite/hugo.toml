@@ -1,9 +1,10 @@
-baseURL = ""
+baseURL = "https://demo.almiraj.xyz/"
 disqusShortname = ""
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
 languageCode = "en"
+LanguageDirection = "rtl"
 paginate = 5
 rssLimit = 10
 theme = "hugo-untexify3"
@@ -32,3 +33,24 @@ toc = true
 rootFontSize = "105%"
 enableDuckDuckGoSearchBox = false
 numberedSubtitles = true
+
+defaultContentLanguage = 'ar'
+# defaultContentLanguageInSubdir = true
+[languages]
+  [languages.ar]
+    # contentDir = 'content/de'
+    disabled = false
+    languageCode = 'ar'
+    languageDirection = 'rtl'
+    languageName = 'arabic'
+    title = 'المعراج'
+    weight = 1
+  [languages.en]
+    # contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Almiraj'
+    weight = 2
+

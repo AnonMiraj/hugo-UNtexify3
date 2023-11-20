@@ -1,11 +1,12 @@
 title = "ALmiraj"
 description = "TeXify3 - A LaTeX-style hugo theme with the gruvbox color scheme for personal blogging"
 footnote = """
-Powered by  <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> | 
-Theme <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
+Made with <a href="https://gohugo.io" target="_blank">
+<img src="/images/icons/hugo.svg" alt="Hugo" width="45px" height="12px"class="hugo-svg">
+</a>Theme <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>UnTeXify3</a>
 """
-keywords = ["hugo", "latex", "theme", "blog", "texify", "texify2", "texify3", "michael", "neuper"]
-customCSS = []
+keywords = ["عزالدين", "linux", "blog", "productivity"]
+customCSS = ["css/styles.css"]
 customJS = []
 dateFormat = "2 January 2006"
 emphasisWithDots = true
@@ -14,17 +15,18 @@ toc = true
 showWordCount = true
 showReadingTime = true
 rootFontSize = "100%"
-math = true
-enableDuckDuckGoSearchBox = false
 numberedSubtitles = true
 enableInlineShortcodes = true
 
-[sharingbuttons]
-facebook = false
-twitter = false
-email = false
-linkedin = false
-reddit = false
-whatsapp = false
-hackernews = false
-telegram = false
+defaultContentLanguage = 'ar'
+# defaultContentLanguageInSubdir = true
+[languages]
+  [languages.ar]
+    # contentDir = 'content/de'
+    disabled = false
+    languageCode = 'ar'
+    languageDirection = 'rtl'
+    languageName = 'arabic'
+    title = 'المعراج'
+    weight = 1
+  

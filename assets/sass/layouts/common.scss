@@ -51,7 +51,7 @@ hr {
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
-  font-family: "Latin Modern Roman", "Times New Roman", serif;
+  font-family: "ElMessiri-Bold",'Amiri-Regular',"NotoKufiArabic-Bold","Almarai-Regular", "Tajawal-Regular","Almarai-Regular", "Times New Roman",  serif;
   min-height: 100vh;
   overflow-wrap: break-word;
   padding: 1rem $padding;
@@ -175,14 +175,6 @@ main {
 }
 
 // misc
-#sharingbuttons {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
 
 .dark-mode-toggle {
   background-color: var(--bg);
