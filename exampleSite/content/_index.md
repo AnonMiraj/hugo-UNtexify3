@@ -7,6 +7,8 @@ Visit the [wiki](https://github.com/michaelneuper/hugo-texify3/wiki) for informa
 - Auto numbered subtitles
 - Dark mode toggle
 - Citations
+- Render math equations with [KaTeX](https://katex.org/)
+- [PostCSS](https://postcss.org/) to make writing CSS easier
 
 ---
 ## Removed Features
@@ -15,8 +17,6 @@ Visit the [wiki](https://github.com/michaelneuper/hugo-texify3/wiki) for informa
 - DuckDuckGo search
 - Buymeacoffee widget
 - [Disqus](https://disqus.com/) & Google Analytics
-- Render math equations with [KaTeX](https://katex.org/)
-- [PostCSS](https://postcss.org/) to make writing CSS easier
 
 ## Acknowledgement
 

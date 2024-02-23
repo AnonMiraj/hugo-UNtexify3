@@ -1,26 +1,31 @@
 {{ define "head" }}
 {{ $options := dict "transpiler" "dartsass" "targetPath" "css/list.css" }}
 {{ with resources.Get "sass/layouts/list.scss" | toCSS $options | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
 {{ end }}
 
 {{ define "main" }}
-<main id="main" class="archive">
+<main id="main" class="archive" dir="rtl">
   {{ $pages := where .Data.Pages "Type" "posts" }}
   {{ range $pages.GroupByDate "2006-01" }}
   <div class="post-group">
+    {{ $arabicMonths := slice "يناير" "فبراير" "مارس" "أبريل" "مايو" "يونيو" "يوليو" "أغسطس" "سبتمبر" "أكتوبر"
+    "نوفمبر" "ديسمبر" }}
+    {{ $keyParts := split .Key "-" }}
+    {{ $monthIndex := index $keyParts 1 | int }}
+    {{ $year := index $keyParts 0 }}
+    <h3>{{ index $arabicMonths (sub $monthIndex 1) }} {{ $year }}</h3>
     <ul>
       {{ range .Pages }}
       <li>
         <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{ $date := .Date }}
         {{ $day := $date.Format "2" }}
-        {{ $month := index (slice "يناير" "فبراير" "مارس" "إبريل" "مايو" "يونيو" "يوليو" "أغسطس" "سبتمبر" "أكتوبر" "نوفمبر" "ديسمبر") (sub $date.Month 1) }}
+        {{ $month := index (slice "يناير" "فبراير" "مارس" "إبريل" "مايو" "يونيو" "يوليو" "أغسطس" "سبتمبر" "أكتوبر"
+        "نوفمبر" "ديسمبر") (sub $date.Month 1) }}
         {{ $year := $date.Format "2006" }}
         <p>{{ $day }} {{ $month }} {{ $year }}</p>
-
-
       </li>
       {{ end }}
     </ul>

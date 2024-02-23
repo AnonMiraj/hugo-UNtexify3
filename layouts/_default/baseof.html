@@ -29,6 +29,11 @@
   <meta name="keywords" content='{{ delimit .Site.Params.keywords " " }}'>
   {{ end }}
 
+  <!-- math -->
+  {{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+  {{ end }}
+
   <!-- opengraph -->
   {{ template "_internal/opengraph.html" . }}
 

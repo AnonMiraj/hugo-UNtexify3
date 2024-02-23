@@ -3,7 +3,7 @@ disqusShortname = ""
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
-languageCode = "en"
+languageCode = "ar"
 LanguageDirection = "rtl"
 paginate = 5
 rssLimit = 10
@@ -31,7 +31,6 @@ dateFormat = "2 January 2006"
 emphasisWithDots = true
 toc = true
 rootFontSize = "105%"
-enableDuckDuckGoSearchBox = false
 numberedSubtitles = true
 
 defaultContentLanguage = 'ar'
