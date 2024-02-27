@@ -1,7 +1,7 @@
 @use "sass:math";
 
 @import "../vars";
-// @import "../syntax";
+@import "../syntax";
 
 .content {
   :last-child {
@@ -46,7 +46,7 @@
     position: relative;
     overflow-x: auto;
     padding: 1rem;
-
+    direction: ltr;
     code {
       padding: 0;
     }
